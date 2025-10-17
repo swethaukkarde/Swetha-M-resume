@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swetha M — Resume</title>
+  <style>
+    :root {
+      --accent: #0b5ed7;
+      --muted: #555;
+      --bg: #f8faff;
+      --card: #fff;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      background: var(--card);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: 10px;
+    }
+    header {
+      text-align: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0;
+      color: var(--muted);
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    h2 {
+      margin-top: 25px;
+      color: #0b2546;
+      font-size: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+    ul {
+      margin: 8px 0 0 20px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 4px 6px 4px 0;
+      background: #eef6ff;
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--accent);
+    }
+    .pdf-btn {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 8px 14px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .pdf-btn:hover {
+      background: #0949a0;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    /* Print stylesheet */
+    @media print {
+      body { background: #fff !important; }
+      .container { box-shadow: none; border-radius: 0; margin: 0; padding: 0; max-width: 100%; }
+      .pdf-btn, footer { display: none; }
+      a::after { content: " (" attr(href) ")"; font-size: 12px; color: #444; }
+    }
+  </style>
+  <script>
+    function downloadPDF() {
+      window.print();
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="3.jpg" alt="Profile Picture">
+      <h1>Swetha M</h1>
+      <p>Email: <a href="mailto:swethaukkarde@gmail.com">swethaukkarde@gmail.com</a> | 
+         <a href="mailto:mswethaBTECH23@ced.alliance.edu.in">mswethaBTECH23@ced.alliance.edu.in</a></p>
+      <p>Phone: <a href="tel:+918073446774">+91-8073446774</a></p>
+      <p>
+        <a href="https://www.linkedin.com/in/swetha-m918" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/swethaukkarde" target="_blank">GitHub</a>
+      </p>
+    </header>
+
+    <a href="#" class="pdf-btn" onclick="downloadPDF()">⬇ Download PDF</a>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Technology</strong> (CSE - AIML), Alliance University — CGPA: 8.6, Graduation: 2027</p>
+      <p><strong>12th Grade (KSEAB)</strong>, SJR College, 2023 — 86.16%</p>
+      <p><strong>10th Grade (SSLC)</strong>, Bharatiya Vidya Bhavan Public School, 2021 — 93.12%</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div>
+        <span class="pill">C</span>
+        <span class="pill">C++</span>
+        <span class="pill">Python</span>
+        <span class="pill">SQL</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">HTML</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">NumPy</span>
+        <span class="pill">Scikit-learn</span>
+        <span class="pill">Google Colab</span>
+        <span class="pill">Excel</span>
+        <span class="pill">Tableau</span>
+        <span class="pill">Power BI</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">VS Code</span>
+        <span class="pill">Jupyter</span>
+      </div>
+      <p class="muted">Other Skills: Data Structures & Algorithms, Business Analysis, Data Analysis, Computer Networks, DBMS, Operating Systems</p>
+    </section>
+
+    <section>
+      <h2>Academic Projects</h2>
+      <ul>
+        <li>Mini Project on Child and Women Trafficking — [Python, SQL, Power BI]</li>
+        <li>Interactive Dashboards at Deloitte — [Power BI, Tableau, Data Analysis]</li>
+        <li>Mini Project on Water Pollution — [Data Analysis, Awareness]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Microsoft Azure AI Fundamentals (2025)</li>
+        <li>Deloitte Data Analysis & Forensic Technology — Forage (2025)</li>
+        <li>AI Foundations Associate — Oracle Cloud Infrastructure (2025)</li>
+        <li>Database Management System — NPTEL (2025)</li>
+        <li>Automation in Manufacturing — NPTEL (2024)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements & Participation</h2>
+      <ul>
+        <li>Internship at Deloitte Data Analysis and Forensic Technology</li>
+        <li>Volunteered in Social/Awareness Campaign on Water Pollution</li>
+        <li>Recognized for leadership and teamwork during projects</li>
+      </ul>
+    </section>
+
+    <footer>
+      Alliance University — Faculty of Engineering and Technology, Bengaluru, Karnataka | www.alliance.edu.in
+    </footer>
+  </div>
+</body>
+</html>
